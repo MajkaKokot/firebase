@@ -23,11 +23,27 @@ const firebaseConfig = {
   };
   
   const app = initializeApp(firebaseConfig);
-  set(ref(database, 'users/uzytkownik1'), {
-    username: 'pierwszy użytkownik',
-    email: 'uzytkownik@mail.com',
-    profile_picture: 'https://gravatar.com/avatar/754aff9a816fd9e0de1750c274e10e20?s=400&d=robohash&r=x'
+  set(ref(database, 'products/firebase-course'), {
+    title: 'Firebase Course',
+    duration: 32,
+    students: [
+      "John",
+      "Kate",
+      "Steven"
+      ]
   });
+
+  
+  set(ref(database, 'products/react-course'), {
+    title: 'React Course',
+    duration: 48,
+    students: [
+      "John",
+      "Susan",
+      ]
+  });
+
+  update(ref(database, )) 
 
 
 
